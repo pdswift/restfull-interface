@@ -1,3 +1,9 @@
+#This script starts a web server on port 5000, searches and updates the zip cod database
+#CNA 335, winter 19
+#Parker Swift, pdsswift@student.rtc.edu
+
+
+
 from flask import Flask, redirect, url_for, request, render_template
 app = Flask(__name__)
 
@@ -5,9 +11,9 @@ app = Flask(__name__)
 def success(name):
    return 'welcome %s' % name
 
-@app.route('/update')
+@app.route('/update/')
 def update():
-   return 'update'
+   return 'test'
 
 @app.route('/login',methods = ['POST', 'GET'])
 def login():
